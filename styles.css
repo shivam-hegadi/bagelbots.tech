@@ -1,3 +1,8 @@
+/* CSS Custom Properties */
+:root {
+    --primary-color: #71723A;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -46,7 +51,7 @@ body {
 .brand-name {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #71723A;
+    color: var(--primary-color);
     letter-spacing: -0.02em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -55,7 +60,7 @@ body {
 .coming-soon {
     font-size: 2rem;
     font-weight: 600;
-    color: #71723A;
+    color: var(--primary-color);
     margin-bottom: 1rem;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -86,6 +91,17 @@ body {
     }
     50% {
         transform: translateY(-10px);
+    }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
 
