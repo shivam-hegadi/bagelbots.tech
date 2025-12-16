@@ -33,44 +33,24 @@ body {
     text-align: center;
 }
 
-/* Logo Section */
-.logo {
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.emoji {
-    font-size: 5rem;
-    line-height: 1;
-    animation: float 3s ease-in-out infinite;
-}
-
-.brand-name {
+/* Header */
+.header {
     font-size: 3.5rem;
     font-weight: 700;
     color: var(--primary-color);
     letter-spacing: -0.02em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
 }
 
-/* Coming Soon Text */
-.coming-soon {
-    font-size: 2rem;
-    font-weight: 600;
+/* Main Number */
+.main-number {
+    font-size: 10rem;
+    font-weight: 700;
     color: var(--primary-color);
-    margin-bottom: 1rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-/* Tagline */
-.tagline {
-    font-size: 1.25rem;
-    color: #666;
-    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    animation: blink 1.5s ease-in-out infinite;
 }
 
 /* Animations */
@@ -85,12 +65,12 @@ body {
     }
 }
 
-@keyframes float {
+@keyframes blink {
     0%, 100% {
-        transform: translateY(0);
+        opacity: 1;
     }
     50% {
-        transform: translateY(-10px);
+        opacity: 0.3;
     }
 }
 
@@ -111,20 +91,12 @@ body {
         padding: 1.5rem;
     }
 
-    .emoji {
-        font-size: 4rem;
-    }
-
-    .brand-name {
+    .header {
         font-size: 2.5rem;
     }
 
-    .coming-soon {
-        font-size: 1.5rem;
-    }
-
-    .tagline {
-        font-size: 1rem;
+    .main-number {
+        font-size: 7rem;
     }
 }
 
@@ -133,19 +105,11 @@ body {
         padding: 1rem;
     }
 
-    .emoji {
-        font-size: 3rem;
+    .header {
+        font-size: 1.8rem;
     }
 
-    .brand-name {
-        font-size: 2rem;
-    }
-
-    .coming-soon {
-        font-size: 1.25rem;
-    }
-
-    .tagline {
-        font-size: 0.9rem;
+    .main-number {
+        font-size: 5rem;
     }
 }
