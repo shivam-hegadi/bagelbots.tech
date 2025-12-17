@@ -6,13 +6,13 @@
     <meta name="description" content="Bagel Bots - VRC Team 71723A competing in VEX Robotics Competition High Stakes 2024-2025">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Bagel Bots - VRC Team 71723A">
-    <meta property="og:description" content="Official website of Bagel Bots VRC Team 71723A - Engineering excellence, one rotation at a time">
+    <meta property="og:description" content="Official website of Bagel Bots VRC Team 71723A - Engineering Excellence, One Rotation at a Time">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bagelbots.tech">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bagel Bots - VRC Team 71723A">
-    <meta name="twitter:description" content="Official website of Bagel Bots VRC Team 71723A - Engineering excellence, one rotation at a time">
+    <meta name="twitter:description" content="Official website of Bagel Bots VRC Team 71723A - Engineering Excellence, One Rotation at a Time">
     <title>Bagel Bots - VRC Team 71723A</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -383,32 +383,28 @@
             navToggle.classList.toggle('active');
         });
 
-        // Navbar scroll effect
-        let lastScroll = 0;
+        // Combined scroll handler with throttling
         const navbar = document.querySelector('.navbar');
-        
-        window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        let ticking = false;
+
+        function handleScroll() {
             const currentScroll = window.pageYOffset;
             
+            // Navbar scroll effect
             if (currentScroll > 100) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
             
-            lastScroll = currentScroll;
-        });
-
-        // Add active state to navigation links based on scroll position
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-
-        window.addEventListener('scroll', () => {
+            // Add active state to navigation links based on scroll position
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
-                if (window.pageYOffset >= sectionTop - 200) {
+                if (currentScroll >= sectionTop - 200) {
                     current = section.getAttribute('id');
                 }
             });
@@ -419,6 +415,17 @@
                     link.classList.add('active');
                 }
             });
+
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    handleScroll();
+                });
+                ticking = true;
+            }
         });
     </script>
 </body>
