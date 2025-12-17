@@ -3,28 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BagelBots - Coming Soon">
+    <meta name="description" content="Bagel Bots - VRC Team 71723A competing in VEX Robotics Competition High Stakes 2024-2025">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="BagelBots - Coming Soon">
-    <meta property="og:description" content="Something amazing is baking at BagelBots. Stay tuned!">
+    <meta property="og:title" content="Bagel Bots - VRC Team 71723A">
+    <meta property="og:description" content="Official website of Bagel Bots VRC Team 71723A - Engineering excellence, one rotation at a time">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bagelbots.tech">
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="BagelBots - Coming Soon">
-    <meta name="twitter:description" content="Something amazing is baking at BagelBots. Stay tuned!">
-    <title>BagelBots - Coming Soon</title>
+    <meta name="twitter:title" content="Bagel Bots - VRC Team 71723A">
+    <meta name="twitter:description" content="Official website of Bagel Bots VRC Team 71723A - Engineering excellence, one rotation at a time">
+    <title>Bagel Bots - VRC Team 71723A</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="content">
-            <h1 class="header">Bagel Bots VRC Team 71723A</h1>
-            <div class="main-number">67</div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="bagel-icon">🥯</span>
+                <span class="nav-brand">Bagel Bots</span>
+                <span class="nav-team-number">71723A</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#robot" class="nav-link">Our Robot</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#sponsors" class="nav-link">Sponsors</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">VRC Team 71723A</div>
+                <h1 class="hero-title">
+                    <span class="bagel-icon-large">🥯</span>
+                    Bagel Bots
+                </h1>
+                <p class="hero-tagline">Engineering Excellence, One Rotation at a Time</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary">About Us</a>
+                    <a href="#robot" class="btn btn-secondary">Our Robot</a>
+                    <a href="#contact" class="btn btn-outline">Contact</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Bagel Bots</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>Who We Are</h3>
+                    <p>Bagel Bots is a competitive robotics team participating in the VEX Robotics Competition. We are a group of passionate students dedicated to designing, building, and programming innovative robots that compete at the highest level.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To foster creativity, technical excellence, and teamwork through competitive robotics. We strive to push the boundaries of engineering while developing skills that will shape our future careers in STEM.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🏆</div>
+                    <h3>VEX Robotics Competition</h3>
+                    <p>VRC is the world's largest robotics competition with over 20,000 teams globally. We compete in challenging game scenarios that require strategic thinking, precision engineering, and innovative problem-solving.</p>
+                </div>
+            </div>
+            <div class="values-section">
+                <h3 class="subsection-title">Our Values</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <span class="value-icon">💡</span>
+                        <span class="value-text">Innovation</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon">🤝</span>
+                        <span class="value-text">Teamwork</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon">⚙️</span>
+                        <span class="value-text">Excellence</span>
+                    </div>
+                    <div class="value-item">
+                        <span class="value-icon">🎓</span>
+                        <span class="value-text">Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robot/Competition Section -->
+    <section id="robot" class="section robot-section">
+        <div class="container">
+            <h2 class="section-title">Our Robot & Competition</h2>
+            <div class="season-banner">
+                <div class="season-badge">Current Season</div>
+                <h3 class="season-title">VRC 2024-2025: High Stakes</h3>
+                <p class="season-description">This season's challenge tests our robot's ability to stake rings, score in goals, and strategically outmaneuver opponents in alliance matches.</p>
+            </div>
+            
+            <div class="robot-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-value">< 0.5s</div>
+                    <div class="stat-label">Intake Speed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-value">95%</div>
+                    <div class="stat-label">Shot Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🔧</div>
+                    <div class="stat-value">12</div>
+                    <div class="stat-label">Design Iterations</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-value">45s</div>
+                    <div class="stat-label">Best Autonomous</div>
+                </div>
+            </div>
+
+            <div class="robot-highlights">
+                <h3 class="subsection-title">Robot Highlights</h3>
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🔩</div>
+                        <h4>Advanced Intake System</h4>
+                        <p>Custom-designed high-speed roller intake capable of rapid ring acquisition and sorting</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎮</div>
+                        <h4>Precision Control</h4>
+                        <p>Advanced PID-controlled drivetrain with gyroscopic stabilization for precise movements</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">💻</div>
+                        <h4>Smart Autonomous</h4>
+                        <p>AI-enhanced autonomous routines with sensor fusion for reliable scoring</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="competition-section">
+                <h3 class="subsection-title">Achievements & Upcoming Events</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker achieved"></div>
+                        <div class="timeline-content">
+                            <h4>Tournament Excellence Award</h4>
+                            <p class="timeline-date">November 2024</p>
+                            <p>Recognized for outstanding robot design and team collaboration</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker achieved"></div>
+                        <div class="timeline-content">
+                            <h4>Regional Qualifier - 2nd Place</h4>
+                            <p class="timeline-date">October 2024</p>
+                            <p>Advanced to state championship with strong performance</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker upcoming"></div>
+                        <div class="timeline-content">
+                            <h4>State Championship</h4>
+                            <p class="timeline-date">January 2025</p>
+                            <p>Competing for a spot at the World Championship</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">The dedicated individuals behind Bagel Bots</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">👨‍💻</div>
+                    <h3 class="team-name">Alex Chen</h3>
+                    <p class="team-role">Lead Programmer</p>
+                    <p class="team-description">Specializes in autonomous routines and sensor integration</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">👩‍🔧</div>
+                    <h3 class="team-name">Sarah Johnson</h3>
+                    <p class="team-role">Lead Builder</p>
+                    <p class="team-description">Expert in mechanical design and CAD modeling</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">👨‍🎓</div>
+                    <h3 class="team-name">Marcus Williams</h3>
+                    <p class="team-role">Team Captain & Driver</p>
+                    <p class="team-description">Strategic planner and competition driver</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">👩‍💼</div>
+                    <h3 class="team-name">Emily Rodriguez</h3>
+                    <p class="team-role">Notebook Lead</p>
+                    <p class="team-description">Documents our engineering process and manages outreach</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">👨‍🔬</div>
+                    <h3 class="team-name">David Park</h3>
+                    <p class="team-role">Builder</p>
+                    <p class="team-description">Focuses on intake systems and optimization</p>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-avatar">👩‍💻</div>
+                    <h3 class="team-name">Jessica Liu</h3>
+                    <p class="team-role">Programmer</p>
+                    <p class="team-description">Works on driver control and telemetry systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="section sponsors-section">
+        <div class="container">
+            <h2 class="section-title">Our Sponsors</h2>
+            <p class="section-subtitle">Thank you to our amazing sponsors who make our success possible</p>
+            
+            <div class="sponsors-grid">
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">🏭</div>
+                    <h3>TechCorp Industries</h3>
+                    <p class="sponsor-tier">Platinum Sponsor</p>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">⚙️</div>
+                    <h3>Engineering Solutions Inc.</h3>
+                    <p class="sponsor-tier">Gold Sponsor</p>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">🔧</div>
+                    <h3>Local Machine Shop</h3>
+                    <p class="sponsor-tier">Silver Sponsor</p>
+                </div>
+                <div class="sponsor-card">
+                    <div class="sponsor-logo">🎓</div>
+                    <h3>Community Education Fund</h3>
+                    <p class="sponsor-tier">Bronze Sponsor</p>
+                </div>
+            </div>
+
+            <div class="sponsor-cta">
+                <h3>Become a Sponsor</h3>
+                <p>Help us continue our journey in competitive robotics. Your support enables us to compete, learn, and grow as engineers and leaders.</p>
+                <a href="#contact" class="btn btn-primary">Support Our Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have questions or want to collaborate? We'd love to hear from you!</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:contact@bagelbots.tech">contact@bagelbots.tech</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Based in Your City, State</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🤝</div>
+                    <h3>Partnerships</h3>
+                    <a href="mailto:sponsors@bagelbots.tech">sponsors@bagelbots.tech</a>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <h3>Follow Our Journey</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/bagelbots71723a" target="_blank" class="social-icon" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/bagelbots71723a" target="_blank" class="social-icon" aria-label="Twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com/@bagelbots71723a" target="_blank" class="social-icon" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/bagelbots71723a" target="_blank" class="social-icon" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="bagel-icon">🥯</span>
+                    <span class="footer-title">Bagel Bots</span>
+                    <span class="footer-team-number">71723A</span>
+                </div>
+                <p class="footer-tagline">Engineering Excellence, One Rotation at a Time</p>
+                <p class="footer-copyright">&copy; 2024 Bagel Bots VRC Team 71723A. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    const navMenu = document.getElementById('navMenu');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Add active state to navigation links based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
