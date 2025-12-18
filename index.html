@@ -20,6 +20,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Popup Modal -->
+    <div id="popupModal" class="popup-modal">
+        <div class="popup-overlay"></div>
+        <div class="popup-content">
+            <button class="popup-close" id="closePopup" aria-label="Close popup">&times;</button>
+            <div class="popup-message">
+                <div class="popup-text">AARUSH LIKES ZOE</div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -355,6 +366,35 @@
     </footer>
 
     <script>
+        // Popup Modal functionality
+        const popupModal = document.getElementById('popupModal');
+        const closePopupBtn = document.getElementById('closePopup');
+        const popupOverlay = document.querySelector('.popup-overlay');
+
+        // Show popup when page loads
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                popupModal.classList.add('show');
+            }, 300);
+        });
+
+        // Close popup when close button is clicked
+        closePopupBtn.addEventListener('click', () => {
+            popupModal.classList.remove('show');
+        });
+
+        // Close popup when clicking outside the content (on overlay)
+        popupOverlay.addEventListener('click', () => {
+            popupModal.classList.remove('show');
+        });
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && popupModal.classList.contains('show')) {
+                popupModal.classList.remove('show');
+            }
+        });
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
